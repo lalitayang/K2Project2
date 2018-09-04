@@ -1,6 +1,6 @@
 # K2Project2
 
-## Introduction
+###### Introduction
 
 This is an open-ended Exploratory Data Analysis project for the Data Science program at K2 Data Science. 
 
