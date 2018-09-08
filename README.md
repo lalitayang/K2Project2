@@ -18,6 +18,9 @@ The count of arrests for each year is similar, with no trend.
 
 ![Arrests Per Year](https://github.com/lalitayang/K2Project2/blob/master/images/arrestsPerYear.png)
 
+![Distribution of Arrests at Each Stadium](https://github.com/lalitayang/K2Project2/blob/master/images/ArrestHomeBoxPlot.png)
+
+![Overlay of Avg Ethanol Per age 21 over Distribution of Arrests per State](https://github.com/lalitayang/K2Project2/blob/master/images/Overlay.png)
 ### Assumptions
 I am assuming that there are the same number of attendees at each of the football games so that the number of arrests is normalized.
 
