@@ -16,11 +16,8 @@ Evaluate public records of police arrests at NFL stadiums and alcohol consumptio
 
 The count of arrests for each year is similar, with no trend. 
 
-### Further Research & Analysis
-
 ### Assumptions
-
-
+I am assuming that there are the same number of attendees at each of the football games so that the number of arrests is normalized.
 
 ### Approach
 
@@ -28,14 +25,8 @@ The stadium arrests data was acquired from kaggle. The data contained arrests fr
 
 To aid in my analysis, data on per capita alcohol consumption by State and type of alcoholic beverage for the years from 1970 - 2016 was acquired from The National Institute on Alcohol Abuse and Alcoholism (Surveillance Report #110). For consistency, my analysis only contains data from years 2011 - 2015. 
 
-### Cleaning and Exploring Data
+After the datasets were cleaned, they were left joined on stadium arrests to analyize the relationship.
 
-The stadium arrests data contained attributes for the season (year), week number, day of the week, and time the game occurred.  It further details the home team and away team, and the respective final scores. Finally, the data contains the number of arrests made at the game and categorical variables for if there was overtime and if it was a division game. 
+### Conclusion
 
-To analyze the dataset more, I created dummy variables for OT_flag and for whether or not the home team won. Additionally, I created variables for the hour of the game time and the absolute difference of the final score. 
-
-Out of curiousity, I wanted to know the home team with the most arrests in aggregate over the entire dataset (2011 to 2015 seasons). I hypothesized that it would be the Oakland Raiders, because the fans are notoriously obnoxious and have a bad reputation for being disrepectful. I was surprised to see that Oakland only ranked 5th (658), behind San Deigo Chargers (983), NY Giants, NY Jets, and Pittsburgh Steelers, with San Diego ranked 1st. However, Oakland was ranked #2 (321) in the overall arrests as the away team, behind the Dallas Cowboys (328). Finally, a bit less surprising after the overall ranks, the highest overall arrests for a match up was the San Diego Chargers and the Oakland Raiders (197). 
-
-Next, I wanted to see which variables in the dataset has a statistically significant relationship with the number of arrests. I performed a simple linear regression on the variables OT, game_result, game_hour, and score_diff, individually, against the dependent variable arrests. The regressions determined that only game_result and game_hour are statistically significant, with p-values 0.0275 of 4.70e-06, respectively. 
-
-Looking at the hours of when the games started, it suggests that an increase in an hour of game start time (aka later in the day) increases the expected number of arrests by 0.5382
+While the datasets were interesting and I was surprised to see that Oakland did not have the most arrests, I did not find any strong or practical correlations or between any variables of the Stadium Arrests dataset or the Alcohol Consumption dataset, except when the game starts. Games that start later in the day tends to have a higher number of arrests. As such, stadium staff could hire more police for night games, however the number of arrest does not increase significantly as it gets later in the day (1 more arrest for every 2 hours later).
