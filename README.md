@@ -16,6 +16,8 @@ Evaluate public records of police arrests at NFL stadiums and alcohol consumptio
 
 The count of arrests for each year is similar, with no trend. 
 
+![Arrests Per Year](https://github.com/lalitayang/K2Project2/blob/master/images/arrestsPerYear.png)
+
 ### Assumptions
 I am assuming that there are the same number of attendees at each of the football games so that the number of arrests is normalized.
 
